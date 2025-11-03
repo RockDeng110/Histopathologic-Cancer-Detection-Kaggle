@@ -20,17 +20,6 @@ This project addresses the **Histopathologic Cancer Detection** challenge from K
 
 Build a deep learning model that accurately identifies metastatic cancer tissue in 96×96px histopathologic image patches to assist in cancer diagnosis.
 
-## 🚀 Features
-
-- **Environment Flexibility:** Supports both Google Colab and local PC development
-- **Efficient Data Processing:** Parallel TIF to PNG conversion for faster preprocessing
-- **Data Cleaning:** Variance-based filtering to remove blank or anomalous images
-- **Transfer Learning:** Leverages pre-trained models (MobileNetV3Small, EfficientNetV2B0, ResNet50V2)
-- **Model Comparison:** Automated comparison of multiple architectures
-- **Two-Phase Training:**
-  - Phase 1: Feature extraction with frozen backbone
-  - Phase 2: Fine-tuning with unfrozen layers
-- **GPU-Accelerated Augmentation:** On-the-fly data augmentation using Keras preprocessing layers
 
 ## 📁 Project Structure
 
@@ -47,15 +36,6 @@ Histopathologic-Cancer-Detection-Kaggle/
 │   └── sample_submission.csv               # Submission template
 └── weights/                                # Model weights (auto-generated)
 ```
-
-## 🛠️ Technology Stack
-
-- **Framework:** TensorFlow/Keras 3.0
-- **Pre-trained Models:** MobileNetV3Small, EfficientNetV2B0, ResNet50V2
-- **Data Processing:** Pandas, NumPy, OpenCV, Pillow
-- **Visualization:** Matplotlib, Seaborn
-- **Parallel Processing:** Joblib
-- **Environment:** Google Colab / Local Python
 
 ## 📊 Workflow
 
@@ -129,6 +109,8 @@ The project implements a comprehensive model comparison framework that:
 - Uses early stopping and learning rate scheduling
 - Applies fine-tuning for optimal performance
 - Tracks AUC, accuracy, and loss metrics across training phases
+- Score from kaggle
+![alt text](auc_score.png)
 
 ## 🤖 AI Tools Declaration
 
